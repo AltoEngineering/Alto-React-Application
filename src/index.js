@@ -1,5 +1,3 @@
-import Alto from '../frameworks/alto-react/core.js';
-
 // ==========================================================================
 // Project: Alto - JavaScript Application Framework
 // Copyright: @2017 The Code Boutique, LLC
@@ -7,9 +5,7 @@ import Alto from '../frameworks/alto-react/core.js';
 // Author: Chad Eubanks
 // ==========================================================================
 
-const App = Alto.Application.create({
-
-
-});
-
-export default App;
+import App from './application/core.js';
+// expose application to window //
+window.App = App;
+App.applicationDidLoad();
