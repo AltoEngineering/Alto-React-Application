@@ -1,5 +1,4 @@
-import Alto from '../frameworks/alto-react/core.js';
-import Router from './routing/core.js';
+import Alto from '../../frameworks/alto-react/core.js';
 
 // ==========================================================================
 // Project: Alto - JavaScript Application Framework
@@ -8,16 +7,9 @@ import Router from './routing/core.js';
 // Author: Chad Eubanks
 // ==========================================================================
 
-const App = Alto.Application.create({
-
-    version: 1.0,
-
-    milestone: '17a',
-
-    router: Router,
-
-    statechart: Alto.Statechart
+const HomeState = Alto.State.extend ({
 
 });
 
-export default App;
+export default HomeState;
+

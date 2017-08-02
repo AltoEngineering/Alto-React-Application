@@ -7,11 +7,16 @@ import Alto from '../../frameworks/alto-react/core.js';
 // Author: Chad Eubanks
 // ==========================================================================
 
+import HomeState from '../statechart/home_state.js';
+
 const Router = Alto.Router.extend({
 
     routes: {
 
-        index: {}
+        index: {
+            state: HomeState
+        }
+
 
     }
 
